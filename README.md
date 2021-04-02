@@ -1,7 +1,9 @@
 # Transmission 1
+
 Making a Dating Survey Form
 
 Things to remember whenever I'm coding:
+
 1.Being more uncomfortable with coding even when copying and pasting. But you can make it for you and change many things around. Take control and design it the way you like. Think of it as Myspace or Tumblr again.
 
 2.Please stop adding so many spaces in your code when the computer does the work for you.
