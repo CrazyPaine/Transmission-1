@@ -4,8 +4,10 @@
     <link rel="stylesheet" href="CSS/style.css">
     <div class="container">
         <header class="header">
-            <h1 id="title" class="text-center">Dating Survey</h1>
-            <p id="description" class="description text-center">Are you tired of looking in the wrong places of those mediocre dating apps? Try this survey and I promise we can find The <i>One</i> for you.</p>
+            <h1 id="title" class="text-center"> Dating Survey Form</h1>
+            <p id="description" class="description text-center">
+                Thank you, for taking this survey. Are you ready to find true love? Let's get started!
+            </p>
         </header>
         <form id="survey-form">
             <div class="form-group">
@@ -13,66 +15,365 @@
                 <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
             </div>
             <div class="form-group">
-                <label id="email label" for="email">Email</label>
+                <label id="email-label" for="email">Email</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
             </div>
             <div class="form-group">
-                <label id="number-label" for="number">Age<span class="clue">(Optional)</span></label
-                >
-                <input type="number" name="age" id="number" min="form-10" max="99" class="form-control" placeholder="Age" required />
-            </div>
-            <div class="form-group">
-                <p>Which option best describes your current role?</p>
-                <select id="dropdown" name="role" class="form-control" required>
-                    <option disabled selected
-                    value="Student">Student</option>
-                        option value="job">Full Time Job</option>
-                        option value="learner">Full Time Learner</option>
-                        option value="preferNO">Prefer not to say</option>
-                        option value="other">Other</option>
-                </select>
-            </div>
+                <label id="number-label" for="number">Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>Do you fall in love fast?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="sometimes">Sometimes</option>
+              <option value="always">Always</option>
+              <option value="notUsually">Not Usually</option>
+              <option value="Never">Never</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Are you a morning person or a night owl?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="morning"
+                type="radio"
+                class="input-radio"
+                checked
+              />I wake up with the birds and the sun.🌅</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="night"
+                type="radio"
+                class="input-radio"
+              />Night owl, hooty hooo.🌃</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="either"
+                type="radio"
+                class="input-radio"
+              />I'm both night owl and early riser. You are literally a badass then.</label
+            >
+          </div>
 
-            <div class="form-group">
-                <p>Would you recommend freeCodeCamp to a friend?</p>
+          <div class="form-group">
+            <p>Are you a hug or kiss person?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="hug"
+                type="radio"
+                class="input-radio"
+                checked
+              />I love hugs they call me Snuggy bear majority of the time. </label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="kiss"
+                type="radio"
+                class="input-radio"
+              />I love kisses. Let's make out right now.</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="both"
+                type="radio"
+                class="input-radio"
+              />I love to hug and kiss. They both go hand-in-hand.</label
+              >
+          </div>
+
+          <div class="form-group">
+            <p>What are your go to colors?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="warm"
+                type="radio"
+                class="input-radio"
+                checked
+              />Warm colors would include orange, red, yellow.</label
+            >
+            <br>
+            <label>
+              <input
+                name="user-recommend"
+                value="cool"
+                type="radio"
+                class="input-radio"
+              />Cool colors would include green, blue, and purple.</label
+            >
+            <br>    
+            <label
+              ><input
+                name="user-recommend"
+                value="neutral"
+                type="radio"
+                class="input-radio"
+              />Neutral colors would include black, white, brown and grey.</label
+              >
+              <br>      
+              <label
+              ><input
+                name="user-recommend"
+                value="earth"
+                type="radio"
+                class="input-radio"
+              />Earth colors would include browns, tans, umber, brick red, terracotta, yellow ochre, etc...</label
+              >
+              <br>      
+              <label
+              ><input
+                name="user-recommend"
+                value="pastel"
+                type="radio"
+                class="input-radio"
+              />Pastel colors would include pink, mauve, baby blue, magic mint, peach, periwinkle, and lavender etc...</label
+              >
+
+          </div>
+
+          <div class="form-group">
+            <p>How clean are you?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="veryClean"
+                type="radio"
+                class="input-radio"
+                checked
+              />I am the most cleanest person you ever seen.</label
+            >
+            <br>
+            <label>
+                <input
+                  name="user-recommend"
+                  value="semiClean"
+                  type="radio"
+                  class="input-radio"
+                  checked
+                />I clean whenever I see it's too much and I can't ignore it anymore.</label
+              >
+              <br>      
+              <label>
+                <input
+                  name="user-recommend"
+                  value="partlyClean"
+                  type="radio"
+                  class="input-radio"
+                  checked
+                />I pick up things here and there but I clean when I am able to.</label
+              >
+              <br>  
+              <label>
+                <input
+                  name="user-recommend"
+                  value="warning"
+                  type="radio"
+                  class="input-radio"
+                  checked
+                />I clean when I see dishes in the sink sitting there for a week.</label
+              >
+              <br>      
+              <label>
+                <input
+                  name="user-recommend"
+                  value="never"
+                  type="radio"
+                  class="input-radio"
+                  checked
+                />I never clean whatsoever. I let my (wife, girlfriend, friend, etc...) do the cleaning for me.</label
+              >
+
+              <div class="form-group">
+                <p>One a road trip with your partner, you're prefer someone who...</p>
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="mysterious" 
+                    type="radio"
+                    class="input-radio"
+                    checked
+                  />Listen to music with you, taking in the scenery.</label
+                > 
+                    <br>
                 <label>
                     <input
-                    name="user-recommend"
-                    value="definitely"
-                    type="radio"
-                    checked
-                    />Definitely</label> >
-                <label>
-                        <input
+                      name="user-recommend"
+                      value="lively"
+                      type="radio"
+                      class="input-radio"
+                      checked
+                    />Trades anecdotes and engages in lively conversation.</label
+                  > 
+                
+                  <div class="form-group">
+                    <p>You're on a first date. Which makes you want a second?</p>
+                    <label>
+                      <input
                         name="user-recommend"
-                        value="maybe"
+                        value="mysterious" 
                         type="radio"
+                        class="input-radio"
                         checked
-                        />Maybe</label>
-                <label>
-                            <input
-                            name="user-recommend"
-                            value="not-sure"
-                            type="radio"
-                            checked
-                            />Not Sure</label>
-            </div>
-            <div class="form-group">
-                <p>What is your favorite feature of freeCodeCamp</p>
-                <select id="most-like" name="mostLike" class="form-control" required>
-                <option disabled selected value>Select an option</option>
-                <option value="challenges">Challenges</option>
-                <option value="projects">Projects</option>
-                <option value="community">Community</option>
-                <option value="openSource">Open Source</option>
-                </select>
+                      />Being intrigued and left wanting more.</label
+                    > 
+                        <br>
+                    <label>
+                        <input
+                          name="user-recommend"
+                          value="outgoing" 
+                          type="radio"
+                          class="input-radio"
+                          checked
+                        />Talking for hours about everything.</label
+                      > 
             </div>
 
-
-
-    </div>
-
-
-
-    </form>
-    </div>
+      
+          <div class="form-group">
+            <p>
+              What is your favorite feature of freeCodeCamp?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="openSource">Open Source</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What would you like to see improved?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="front-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Front-end Projects</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="back-end-projects"
+                type="checkbox"
+                class="input-checkbox"
+              />Back-end Projects</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="data-visualization"
+                type="checkbox"
+                class="input-checkbox"
+              />Data Visualization</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Challenges</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="open-source-community"
+                type="checkbox"
+                class="input-checkbox"
+              />Open Source Community</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="gitter-help-rooms"
+                type="checkbox"
+                class="input-checkbox"
+              />Gitter help rooms</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="videos"
+                type="checkbox"
+                class="input-checkbox"
+              />Videos</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="city-meetups"
+                type="checkbox"
+                class="input-checkbox"
+              />City Meetups</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="wiki"
+                type="checkbox"
+                class="input-checkbox"
+              />Wiki</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="forum"
+                type="checkbox"
+                class="input-checkbox"
+              />Forum</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="additional-courses"
+                type="checkbox"
+                class="input-checkbox"
+              />Additional Courses</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
